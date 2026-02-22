@@ -36,7 +36,7 @@ public class ExcelCell {
             String s = asString(cell);
             if (s == null || s.isBlank()) return null;
 
-            // bazı excel’ler: "2026-02-21 00:34:10" gibi
+
             s = s.trim();
             DateTimeFormatter[] fmts = new DateTimeFormatter[] {
                     DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"),

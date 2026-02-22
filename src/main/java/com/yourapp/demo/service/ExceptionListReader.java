@@ -23,7 +23,7 @@ public class ExceptionListReader {
             Row header = sheet.getRow(sheet.getFirstRowNum());
             Map<String, Integer> idx = headerIndex(header);
 
-            // ✅ senin dosyada: "Wave number" ve "Abnormal shelving time"
+
             Integer waveIdx = findIdx(idx,
                     "wave number", "wave no", "wave", "waveno", "wave_no"
             );

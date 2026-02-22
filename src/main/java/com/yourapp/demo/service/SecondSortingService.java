@@ -18,7 +18,7 @@ public class SecondSortingService {
     private final ExceptionListReader exceptionReader = new ExceptionListReader();
 
     public AnalyzeResponse analyze(MultipartFile waveFile, MultipartFile exceptionFile, String shiftType, String shiftDate) {
-        // shift paramlarını IGNORE ediyoruz (eski çalışan gibi)
+
         return analyze(waveFile, exceptionFile);
     }
 
